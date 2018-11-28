@@ -1,0 +1,58 @@
+.footer {
+  background-color: #e7eaed;
+  padding: 67px 0 70px 0;
+}
+
+.address__title, .contacts__title, .subscribe__title {
+  color: #3d3d3d;
+  font-family: Dosis;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 4px;
+  margin-bottom: 11px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.policy__title-text, .policy__documments, .address__title-text, .phone, .fax, .email {
+  color: #3d3d3d;
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.policy__documments {
+  color: #f16522;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.policy__documments:hover {
+  text-decoration: underline;
+}
+.policy__title {
+  color: #3d3d3d;
+  font-family: Dosis;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 1.6rem;
+}
+
+.address, .policy, .contacts {
+  width: 299px;
+}
+
+.subscribe {
+  width: 270px;
+}
+
+.phone, .fax, .email {
+  display: inline-block;
+}

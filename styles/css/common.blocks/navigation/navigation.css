@@ -1,0 +1,17 @@
+.navigation__list {
+  display: flex;
+  font-family: "Dosis";
+}
+.navigation__item a {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navigation__item a:hover {
+  text-decoration: underline;
+}
+.navigation__item:not(:first-child) {
+  margin-left: 24px;
+}
