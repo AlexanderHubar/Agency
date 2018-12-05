@@ -2,7 +2,7 @@
 	background-color: #e7eaed
 	padding: 67px 0 70px 0
 
-.address__title, .contacts__title, .subscribe__title 
+.info__title 
 	color: #3d3d3d
 	font-family: Dosis
 	font-size: 1rem
@@ -10,19 +10,28 @@
 	text-transform: uppercase
 	line-height: 4px
 	margin-bottom: 11px
+	&_adress
+		margin-bottom: 21px
+	&_subscribe
+		margin-bottom: 26px
 
 .footer__info 
 	display: flex
 	justify-content: space-between
 
-.policy__title-text, .policy__documments, .address__title-text, .phone, .fax, .email 
+.policy__text, .policy__documments, .info__text, .phone, .fax, .email 
 	color: #3d3d3d
 	font-family: "Open Sans"
 	font-size: 0.75rem
 	font-weight: 400
 	line-height: 1.5
 
+.info__text_address
+	line-height: 1.375rem
+
 .policy
+	&__text 
+		margin-bottom: 10px
 	&__documments
 		color: #f16522
 		font-size: 0.625rem
@@ -39,11 +48,42 @@
 		line-height: 0
 		margin-bottom: 1.6rem
 
-.address, .policy, .contacts
+.contacts-list__item
+	line-height: 1.6875
+
+.info_address, .policy, .info_contacts
 	width: 299px
 
-.subscribe 
+.info_subscribe 
 	width: 270px
 
 .phone, .fax, .email 
 	display: inline-block
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+
+.subscribe-input
+	display: flex
+	width: 100%
+	justify-content: space-between
+	padding: 13px 10px
+	background-color: #fff
+	&__field
+		border: none
+		font-family: "Open Sans"
+		color: #cdcdcd
+		font-size: 0.8125rem
+		outline: none
+		width: calc(100% - 32px)
+		&::placeholder 
+			font-family: "Open Sans"
+			color: #cdcdcd
+			font-size: 0.8125rem
+	&__send
+		width: 32px
+		height: 20px
+		background: url('../../img/mail.png') 
+		border: none
+		&:hover 
+			cursor: pointer

@@ -3,7 +3,7 @@
   padding: 67px 0 70px 0;
 }
 
-.address__title, .contacts__title, .subscribe__title {
+.info__title {
   color: #3d3d3d;
   font-family: Dosis;
   font-size: 1rem;
@@ -12,13 +12,19 @@
   line-height: 4px;
   margin-bottom: 11px;
 }
+.info__title_adress {
+  margin-bottom: 21px;
+}
+.info__title_subscribe {
+  margin-bottom: 26px;
+}
 
 .footer__info {
   display: flex;
   justify-content: space-between;
 }
 
-.policy__title-text, .policy__documments, .address__title-text, .phone, .fax, .email {
+.policy__text, .policy__documments, .info__text, .phone, .fax, .email {
   color: #3d3d3d;
   font-family: "Open Sans";
   font-size: 0.75rem;
@@ -26,6 +32,13 @@
   line-height: 1.5;
 }
 
+.info__text_address {
+  line-height: 1.375rem;
+}
+
+.policy__text {
+  margin-bottom: 10px;
+}
 .policy__documments {
   color: #f16522;
   font-size: 0.625rem;
@@ -45,14 +58,52 @@
   margin-bottom: 1.6rem;
 }
 
-.address, .policy, .contacts {
+.contacts-list__item {
+  line-height: 1.6875;
+}
+
+.info_address, .policy, .info_contacts {
   width: 299px;
 }
 
-.subscribe {
+.info_subscribe {
   width: 270px;
 }
 
 .phone, .fax, .email {
   display: inline-block;
+  text-decoration: none;
+}
+.phone:hover, .fax:hover, .email:hover {
+  text-decoration: underline;
+}
+
+.subscribe-input {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 13px 10px;
+  background-color: #fff;
+}
+.subscribe-input__field {
+  border: none;
+  font-family: "Open Sans";
+  color: #cdcdcd;
+  font-size: 0.8125rem;
+  outline: none;
+  width: calc(100% - 32px);
+}
+.subscribe-input__field::placeholder {
+  font-family: "Open Sans";
+  color: #cdcdcd;
+  font-size: 0.8125rem;
+}
+.subscribe-input__send {
+  width: 32px;
+  height: 20px;
+  background: url("../../img/mail.png");
+  border: none;
+}
+.subscribe-input__send:hover {
+  cursor: pointer;
 }

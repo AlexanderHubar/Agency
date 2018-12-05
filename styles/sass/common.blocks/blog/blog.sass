@@ -1,0 +1,69 @@
+.blog 
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+	&_padding
+	padding: 107px 0
+	&-posts
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 50px
+		width: 100%
+		&__item
+			max-width: 370px
+			margin-bottom: 30px
+
+	.post
+		&-image
+			margin-bottom: 24px
+		&-preview
+			&__image
+				margin-bottom: 20px
+			&__title
+				color: #000000
+				margin-bottom: 5px
+				font-weight: 600
+			&__address
+				color: #8e8e8e
+				font-size: 0.875rem
+				line-height: 24px
+			&__text
+				color: #3d3d3d
+				font-size: 14px
+				font-weight: 400
+				line-height: 24px
+				margin-bottom: 10px
+			&__read
+				font-size: 0.875rem
+				color: #f16522
+				text-decoration: none
+				&:hover
+					cursor: pointer
+					text-decoration: underline
+
+.load-more 
+	border: none
+	background-color: transparent
+	color: #3d3d3d
+	font-family: Dosis
+	font-size: 1rem
+	font-weight: 700
+	text-transform: uppercase
+	width: auto
+	&:hover 
+		cursor: pointer
+
+.cross 
+	&::before
+		content: ''
+		display: block
+		margin: 5px 7px 0 0
+		float: left
+		background: url('../../img/cross.png')
+		width: 8px
+		height: 8px
+
+		
+		
