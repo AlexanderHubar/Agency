@@ -2,7 +2,7 @@ const wrapperMenu = document.querySelector('.wrapper-menu');
 const mobileNav = document.querySelector('.mobile-nav');
 const header =  document.querySelector('.header');
 const welcomeBtn = document.querySelector('.welcome-section__scroll');
-const expirieceSection = document.querySelector('.expirience')
+const experienceSection = document.querySelector('.expirience')
 const scrollBtn = document.querySelector('.scroll-top')
 const screen = window.innerHeight
 
@@ -26,14 +26,15 @@ window.addEventListener('scroll', function(e) {
 });
 
 welcomeBtn.addEventListener('click',() => {
+    let scrollPosition = window.scrollY;
     window.scroll({
-        top: expirieceSection.getBoundingClientRect().y - 48,
+        top: scrollPosition + experienceSection.getBoundingClientRect().y - 48,
         left: 0,
         behavior: 'smooth'
     });
 })
 
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', () => {
 
 	let scrollPosition = window.scrollY;
 
