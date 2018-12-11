@@ -55,7 +55,7 @@
 	width: 299px
 
 .info_subscribe 
-	width: 270px
+	min-width: 270px
 
 .phone, .fax, .email 
 	display: inline-block
@@ -87,3 +87,30 @@
 		border: none
 		&:hover 
 			cursor: pointer
+
+@media only screen and (max-width: 767px)
+	.footer
+		padding: 40px 0 35px 0
+		&__info
+			flex-wrap: wrap
+			justify-content: flex-start
+			text-align: center
+			li:last-child 
+				margin-bottom: 0
+	.policy, .info
+		width: 100%
+		margin-bottom: 35px
+	.info__title_adress
+		margin-bottom: 15px
+
+@media only screen and (min-width: 768px) and (max-width: 921px)
+	.footer__info
+		flex-wrap: wrap
+		justify-content: space-evenly
+	.info_address, .policy, .info_contacts
+		width: auto
+		margin-bottom: 20px
+
+@media only screen and (min-width: 922px) and (max-width: 970px)
+	.info_address, .policy, .info_contacts
+		margin-right: 10px

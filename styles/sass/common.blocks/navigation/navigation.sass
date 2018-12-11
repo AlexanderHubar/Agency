@@ -1,6 +1,7 @@
-.navigation
+.navigation,
 	&__list
 		display: flex
+		flex-wrap: wrap
 		font-family: 'Dosis'
 	&__item
 		a
@@ -13,4 +14,43 @@
 				text-decoration: underline
 	&__item:not(:first-child) 
 		margin-left: 24px
+
+.mobile-nav
+	display: none
+	margin-top: 14px
+	&__list	
+		display: flex
+		flex-direction: column
+		font-family: 'Dosis'
+		align-items: center
+		justify-content: center
+		height: -webkit-fill-available
+		background: #5097ff
+	&__item
+		margin: 15px
+		a
+			font-size: 1.25rem
+			text-transform: uppercase
+			font-weight: 500
+			color: #ffffff
+			text-decoration: none
+			&:hover 
+				text-decoration: underline
+
+.visible 
+	display: block
+	animation: fadeIn 2s ease-in both
+
+@keyframes fadeIn 
+from 
+	opacity: 0
+	transform: translate3d(0, -20%, 0)
+
+to 
+	opacity: 1
+	transform: translate3d(0, 0, 0)
+
+@media only screen and (max-width: 768px) 
+	.navigation
+		display: none
 	
