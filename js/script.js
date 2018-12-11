@@ -26,9 +26,11 @@ window.addEventListener('scroll', function(e) {
 });
 
 welcomeBtn.addEventListener('click',() => {
-	expirieceSection.scrollIntoView({ 
-		behavior: 'smooth' 
-	});
+    window.scroll({
+        top: expirieceSection.getBoundingClientRect().y - 48,
+        left: 0,
+        behavior: 'smooth'
+    });
 })
 
 window.addEventListener('scroll', function(e) {
