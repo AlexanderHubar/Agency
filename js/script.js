@@ -37,9 +37,9 @@ welcomeBtn.addEventListener('click',() => {
 window.addEventListener('scroll', () => {
 	let scrollPosition = window.scrollY;
 	if (scrollPosition > screen) {
-		scrollBtn.style.display = 'block'
+		scrollBtn.style.display = 'block';
 	} else {
-		scrollBtn.style.display = 'none'
+		scrollBtn.style.display = 'none';
 	}
 });
 
